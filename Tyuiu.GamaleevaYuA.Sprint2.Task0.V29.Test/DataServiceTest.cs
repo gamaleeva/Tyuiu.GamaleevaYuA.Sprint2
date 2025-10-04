@@ -13,6 +13,7 @@ namespace Tyuiu.GamaleevaYuA.Sprint2.Task0.V29.Test
             int y = 735;
             bool[] res = new bool[6]; 
             res = ds.GetCompareOperations(x, y);
+
             CollectionAssert.AreEqual(wait, res);
 
         }
