@@ -3,6 +3,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+
         DataService ds = new DataService();
         Console.Title = "Спринт #2 | Выполнила: Гамалеева Ю. А. | ИБКСб-25-1";
         Console.WriteLine("***************************************************************************");
