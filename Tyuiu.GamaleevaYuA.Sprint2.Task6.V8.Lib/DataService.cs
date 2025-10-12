@@ -27,18 +27,18 @@ namespace Tyuiu.GamaleevaYuA.Sprint2.Task6.V8.Lib
             }
                 switch (n)
                 {
-                    case 1: return $"{m} января";
-                    case 2: return $"{m} февраля";
-                    case 3: return $"{m} марта";
-                    case 4: return $"{m} апреля";
-                    case 5: return $"{m} мая";
-                    case 6: return $"{m} июня";
-                    case 7: return $"{m} июля";
-                    case 8: return $"{m} августа";
-                    case 9: return $"{m} сентября";
-                    case 10: return $"{m} октября";
-                    case 11: return $"{m} ноября";
-                    case 12: return $"{m} декабря";
+                    case 1: return $"{m}.01";
+                    case 2: return $"{m}.02";
+                    case 3: return $"{m}.03";
+                    case 4: return $"{m}.04";
+                    case 5: return $"{m}.05";
+                    case 6: return $"{m}.06";
+                    case 7: return $"{m}.07";
+                    case 8: return $"{m}.08";
+                    case 9: return $"{m}.09";
+                    case 10: return $"{m}.10";
+                    case 11: return $"{m}.11";
+                    case 12: return $"{m}.12";
                     default: throw new ArgumentException($"Месяц должен быть от 1 до 12. Значение {n}");
                 }
         }
