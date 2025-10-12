@@ -11,7 +11,7 @@ namespace Tyuiu.GamaleevaYuA.Sprint2.Task6.V8.Test
             string wait = "28 декабря";
             int m = 12;
             int n = 29;
-            string res = ds.FindDateOfPreviousDay(m, n);
+            string res = ds.FindDateOfPreviousDay(n, m);
             Assert.AreEqual(wait, res);
             
         }
