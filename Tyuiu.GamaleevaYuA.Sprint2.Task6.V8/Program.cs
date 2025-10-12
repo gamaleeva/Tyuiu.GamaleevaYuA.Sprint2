@@ -1,4 +1,4 @@
-﻿using Tyuiu.GamaleevaYuA.Sprint2.Task5.V14.Lib;
+﻿using Tyuiu.GamaleevaYuA.Sprint2.Task6.V8.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -7,36 +7,34 @@ internal class Program
         Console.Title = "Спринт #2 | Выполнила: Гамалеева Ю. А. | ИБКСб-25-1";
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #2                                                               *");
-        Console.WriteLine("* Тема: Оператор switch                                                   *");
-        Console.WriteLine("* Задание #5                                                              *");
-        Console.WriteLine("* Вариант #14                                                             *");
+        Console.WriteLine("* Тема: Получение результата из switch                                    *");
+        Console.WriteLine("* Задание #6                                                              *");
+        Console.WriteLine("* Вариант #8                                                              *");
         Console.WriteLine("* Выполнила: Гамалеева Юлия Андреевна | ИБКСб-25-1                        *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* Написать программу, которая использует оператор switch вычисляет        *");
-        Console.WriteLine("* требуемое значение и возвращает результат.                              *");
+        Console.WriteLine("* Написать программу, которая использует сокращенную форму записи         *");
+        Console.WriteLine("* оператора switch вычисляет требуемое значение и возвращает результат.   *");
         Console.WriteLine("*                                                                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
         int x, y;
-        Console.WriteLine("Введите день месяца: ");
+        Console.WriteLine("Введите день: ");
         x = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите номер дня недели первого дня года: ");
+        Console.WriteLine("Введите номер месяца: ");
         y = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        if ((x <= 365) && (x >= 1) && (y >= 1) && (y <= 7))
+        if ((x <= 31)&&(x>=1)&&(y >= 1)&&(y<=12))
         {
-            string res = ds.FindDayName(x, y);
-            Console.WriteLine("День недели: " + res);
+            string res = ds.FindDateOfPreviousDay(x, y);
+            Console.WriteLine("Прошлый день: " + res);
         }
         else
         {
             Console.WriteLine("Значения введены некорректно");
         }
         Console.ReadKey();
-
-
     }
 }
